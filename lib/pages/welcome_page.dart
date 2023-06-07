@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trip_finder/misc/colors.dart';
 import 'package:trip_finder/widgets/app_large_text.dart';
 import 'package:trip_finder/widgets/app_text.dart';
 
@@ -37,23 +38,20 @@ class _WelcomePageState extends State<WelcomePage> {
             margin: const EdgeInsets.only(top: 150, left: 20, right: 20),
             child: Row(
               children: [
-                Expanded(
-                  flex: 8,
-                  child: Column(
+                Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       AppLargeText(text: "Trip"),
-                      AppText(text: "Mountain", size: 30,),
+                      AppText(text: "Mountain", size: 30),
                       const SizedBox(height: 20),
-                      AppText(text: "Mountain hikes give you an incredible sense of freedom along with endurance tests")
+                      Container(width: 250,
+                        child: AppText(
+                          size: 14,
+                          color: AppColors.textColor2,
+                          text: "Mountain hikes give you an incredible sense of freedom along with endurance tests")
+                      )
                     ],
                   ),
-                ),
-                Expanded(flex: 2, 
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [AppText(text: "ss")],
-                ))
             ],),
           )
         );
