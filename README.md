@@ -1,16 +1,7 @@
-# trip_finder
+# Trip Finder
 
-A new Flutter project.
+Sample app developed in Flutter demonstrate UI. 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/nmolkeri/trip-planner-flutter/assets/10701840/a8de1f00-4c77-4bcf-91dc-6a734eac357f)
+![image](https://github.com/nmolkeri/trip-planner-flutter/assets/10701840/e902e32c-5112-4a8a-a9af-1237fbc648d2)
+![image](https://github.com/nmolkeri/trip-planner-flutter/assets/10701840/ca56e67d-3609-478b-8c09-149c61e988e8)
