@@ -28,9 +28,8 @@ class _AppCubitLogicsState extends State<AppCubitLogics> {
                 return DetailsPage();
               case LoadingState:
                 return Center(child: CircularProgressIndicator());
-              default:
-                Container();
             }
+            return Container();
           } 
         ),
     );
