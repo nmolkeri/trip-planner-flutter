@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:trip_finder/misc/colors.dart';
 import 'package:trip_finder/widgets/app_large_text.dart';
 import 'package:trip_finder/widgets/app_text.dart';
+
+import '../cubit/app_cubits.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -89,16 +92,21 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   scrollDirection: Axis.horizontal,
                   itemCount: 3,
                   itemBuilder: (BuildContext context, int index) {
-                    return Container(
-                      margin: const EdgeInsets.only(right: 10, top: 10),
-                      width: 200,
-                      height: 300,
-                      decoration: BoxDecoration (
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white,
-                        image: DecorationImage(
-                          image: AssetImage("img/mountain.jpeg"),
-                          fit: BoxFit.cover
+                    return GestureDetector(
+                      onTap: () {
+                        BlocProvider.of<AppCubits>(context).detailPage();
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 10, top: 10),
+                        width: 200,
+                        height: 300,
+                        decoration: BoxDecoration (
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white,
+                          image: DecorationImage(
+                            image: AssetImage("img/mountain.jpeg"),
+                            fit: BoxFit.cover
+                          ),
                         ),
                       ),
                     );
